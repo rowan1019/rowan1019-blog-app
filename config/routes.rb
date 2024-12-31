@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   root to: 'articles#index'
   get '/about' => 'articles#about'
 
-  resources :articles, only: [:show, :new, :create]
+  resources :articles, only: [:show, :new, :create, :edit, :update]
 end
  
