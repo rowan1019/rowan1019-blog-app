@@ -19,7 +19,6 @@ class Article < ApplicationRecord
 
     validate :validate_title_and_content_lenght
 
-
     def display_created_at
         I18n.l(self.created_at, format: :default)
     end
